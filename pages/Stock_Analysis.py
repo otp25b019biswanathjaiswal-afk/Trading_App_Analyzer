@@ -3,7 +3,7 @@ import pandas as pd
 import yfinance as yf
 import plotly.graph_objects as go
 import datetime
-import ta
+import panda_ta as ta
 import sys
 from pathlib import Path
 from pages.utils.plotly_figure import plotly_table
@@ -162,3 +162,4 @@ else:
     if chart_type == 'Line' and indicators == 'MACD':
         st.plotly_chart(close_chart(new_df1, num_period), use_container_width=True)
         st.plotly_chart(MACD(new_df1, num_period), use_container_width=True)
+
