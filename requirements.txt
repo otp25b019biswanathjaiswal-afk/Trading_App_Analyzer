@@ -3,5 +3,6 @@ yfinance
 pandas
 numpy
 plotly
+pandas-ta
 statsmodels
 scikit-learn
